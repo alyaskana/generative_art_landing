@@ -149,6 +149,7 @@ h2 {
     font-size: 80px;
     max-width: 770px;
     margin-bottom: 42px;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -277,7 +278,6 @@ p a:hover {
     margin: 0 12px;
 }
 .paint {
-    width: 100%;
     height: 100%;
     filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.2));
 }
@@ -373,6 +373,15 @@ section#today {
     text-align: center;
     color: #0000BD;
     text-transform: uppercase;
+    margin-top: 100px;
+}
+.art_gallery_text {
+    text-align: center;
+    font-size: 24px;
+    width: 750px;
+    margin: 30px auto 0;
+    /* color: #0000BD; */
+    line-height: 130%;
 }
 .save_sketch {
     color: #ffffff;
@@ -495,4 +504,9 @@ section#how_to_do {
 .frameworks img {
     width: 300px;
     margin: 0 50px 20px;
+}
+
+#how_to_sale {
+    background-color: #0000BD;
+    color: white;
 }
