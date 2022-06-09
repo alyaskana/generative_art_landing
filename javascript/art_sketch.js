@@ -57,7 +57,6 @@ function initParticles() {
 
 
 function handleFile(file) {
-  print(file);
   if (file.type === 'image') {
     img = loadImage(file.data);
   } else {

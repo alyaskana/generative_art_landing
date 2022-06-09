@@ -59,7 +59,12 @@ body {
 .first_screen {
     position: relative;
     min-height: 650px;
+    height: 100vh;
     background-color: #0000BD;
+    background-image: url('assets/images/head_img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .head_content {
@@ -91,6 +96,7 @@ body {
     text-align: center;
     padding-bottom: 2px;
     border-bottom: 2px solid transparent;
+    cursor: pointer;
 }
 .menu_item:hover, .menu_item.active {
     border-color: white;
@@ -338,8 +344,8 @@ section#today {
     justify-content: center;
     background-color: #0000BD;
     border-radius: 100%;
-    width: 600px;
-    height: 600px;
+    width: 530px;
+    height: 530px;
     color: white;
     transition: background-color 0.3s;
 }
@@ -363,11 +369,10 @@ section#today {
     width: 100%;
 }
 .art_gallery_title {
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
     color: #0000BD;
     text-transform: uppercase;
-    margin-bottom: 50px;
 }
 .save_sketch {
     color: #ffffff;
@@ -378,7 +383,7 @@ section#today {
     padding: 12px 16px;
     background-color: #0000BD;
     width: fit-content;
-    margin: 24px auto 0;
+    margin: 0 auto;
     cursor: pointer;
 }
 
@@ -475,4 +480,19 @@ section#today {
     font-style: italic;
     line-height: 130%;
     width: 550px;
+}
+
+section#how_to_do {
+    background-color: #0000BD;
+}
+
+.frameworks {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+}
+.frameworks img {
+    width: 300px;
+    margin: 0 50px 20px;
 }

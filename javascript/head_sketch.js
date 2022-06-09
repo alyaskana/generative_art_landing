@@ -6,6 +6,10 @@ var positionY = new Array(particlesQuantity);
 var velocityX = new Array(particlesQuantity).fill(0);
 var velocityY = new Array(particlesQuantity).fill(0);
 
+document.getElementById('head_sketch').addEventListener('click', () => {
+  saveCanvas(myCanvas, 'generative_art', 'jpg');
+})
+
 var gravity = 0.0;
 
 function setup() {
