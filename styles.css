@@ -522,13 +522,13 @@ section#how_to_do {
     stroke: #0000BD;
 }
 .future_quote_title {
-    font-size: 150px;
+    font-size: 100px;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
 .future_quote_content {
     display: flex;
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 60px;
 }
 .future_quote_text {

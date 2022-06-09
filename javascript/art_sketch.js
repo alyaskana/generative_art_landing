@@ -10,7 +10,7 @@ const ss = (f) => {
     let myArt = f.createCanvas(600, 600);
     // f.createCanvas(600, 600);
     // myCanvas.parent("art_sketch");
-    f.background("#FFFFFF");
+    f.background('rgba(0,0,0,0)');
     f.smooth();
 
     n = 1000;
@@ -24,7 +24,7 @@ const ss = (f) => {
     input.id('art_input')
 
     document.getElementById('save_sketch').addEventListener('click', () => {
-      f.saveCanvas(myArt, 'generative_art', 'jpg');
+      f.saveCanvas(myArt, 'generative_art', 'png');
     })
   }
 
