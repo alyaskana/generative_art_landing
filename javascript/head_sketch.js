@@ -6,15 +6,15 @@ var positionY = new Array(particlesQuantity);
 var velocityX = new Array(particlesQuantity).fill(0);
 var velocityY = new Array(particlesQuantity).fill(0);
 
-document.getElementById('head_sketch').addEventListener('click', () => {
-  saveCanvas(myCanvas, 'generative_art', 'jpg');
-})
+// document.getElementById('head_sketch').addEventListener('click', () => {
+//   saveCanvas(myCanvas, 'generative_art', 'jpg');
+// })
 
 var gravity = 0.0;
 
 function setup() {
 
-  let myCanvas = createCanvas(windowWidth, windowHeight > 650 ? windowHeight : 600);
+  let myCanvas = createCanvas(windowWidth, windowHeight > 650 ? windowHeight : 650);
   myCanvas.parent("head_sketch");
   strokeWeight(2);
   stroke(255, 255, 255);
