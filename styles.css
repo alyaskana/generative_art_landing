@@ -569,3 +569,10 @@ section#how_to_do {
 .final p {
     font-size: 30px;
 }
+
+.back_pattern {
+    position: absolute;
+    bottom: -650px;
+    left: -90px;
+    z-index: -1;
+}
