@@ -43,7 +43,7 @@
         <span class="italic">Что такое</span><br />
         <span class="lack_line">generative art?</span>
       </h2>
-      <p>
+      <p class="main">
         Обычно при упоминании generative art подразумевается сфера визуального арта, по&nbsp;аналогии с&nbsp;картинами,
         висящими в&nbsp;галереях. В&nbsp;этом случае мы&nbsp;называем генеративным искусством произведения, созданные
         с&nbsp;помощью программного кода. Только в&nbsp;отличие от&nbsp;привычного цифрового творчества, где художник
@@ -88,7 +88,7 @@
       </div>
     </div>
     <div class="section_content">
-      <p style="margin-top: 50px" id="history_anchor">
+      <p class="main" style="margin-top: 50px" id="history_anchor">
         Художник принимает участие в&nbsp;процессе только на&nbsp;первом этапе. Таким образом, generative art
         в&nbsp;отличие
         от&nbsp;традиционного искусства, буквально создает себя сам.
@@ -100,7 +100,7 @@
     <div id="animated_circle"></div>
     <div class="section_content white">
       <h2>Как появилось <span class="italic">генеративное</span> искусство?</h2>
-      <p>
+      <p class="main">
         Первые приемы генеративного творчества существовали еще задолго до&nbsp;появления компьютерных технологий.
         Например,
         всем известный калейдоскоп, который при каждом повороте (случайность) благодаря системе зеркал (алгоритм)
@@ -195,7 +195,7 @@
     </div>
 
     <div class="section_content">
-      <p class="white" style="margin: 0; max-width: 1000px">
+      <p class="white" style="max-width: 1000px">
         Генеративный, или по-другому, креативный кодинг, сейчас очень популярен, поэтому мы&nbsp;поговорили с&nbsp;теми,
         кто
         напрямую связан с&nbsp;этой индустрией, а&nbsp;именно&nbsp;&mdash; создает ее&nbsp;своими руками, о&nbsp;том,
@@ -364,6 +364,48 @@
   </section>
 
   <section>
+    <div style="display: flex">
+      <div style="margin-right: 50px;">
+        <h2 class="blue">
+          Нейросети-<span class="lack_line">генераторы</span>
+        </h2>
+        <div class=" gan">
+          <div class="title">
+            Генеративно-состязательная нейросеть (GAN)
+          </div>
+          <div class="definition">
+            (аббр.) алгоритм, состоящий из&nbsp;двух нейросетей — создателя и&nbsp;отбраковщика, циклически работающих
+            друг
+            против друга. В&nbsp;итоге, они обучаются без постороннего вмешательства.
+          </div>
+        </div>
+        <p>
+          Сейчас в&nbsp;эпоху Big Data и&nbsp;искусственного интеллекта генеративное искусство создается не&nbsp;только
+          дизайнерским софтом, и&nbsp;кодом, но&nbsp;и&nbsp;при помощи генеративно-состязательных сетей (GAN). Так, уже
+          в&nbsp;октябре 2018 года аукционный дом Christie&rsquo;s в&nbsp;Нью-Йорке впервые продал картину, созданную
+          такой
+          нейросетью. &laquo;Портрет Эдмона де&nbsp;Белами&raquo; ушел с&nbsp;молотка
+          за&nbsp;432&nbsp;500&nbsp;долларов.
+          Это
+          в&nbsp;45&nbsp;раз выше, чем верхняя граница оценки стоимости, озвученная изначально.
+        </p>
+      </div>
+      <img src="assets/images/neuro_portret.jpeg" style="width: 600px; border: 15px double #0000BD;"">
+    </div>
+    <div style=" display: flex; margin-top: 130px; align-items: center;">
+      <img src="assets/images/yandex.jpeg" style="border: 15px double #0000BD;">
+      <p style="margin-left: 50px; max-width: 700px;">
+        Генеративное искусство получает популярность и&nbsp;в&nbsp;России. Например, совсем недавно компания Яндекс
+        презентовала
+        <a href=" https://yandex.ru/lab/ganart" target="_blank">галерею нейросетевого искусства</a>. Причем, помимо
+        того,
+        что все работы онлайн-выставки были сгенерированы нейросетью,
+        другая нейросеть занималась отбором лучших работ.
+      </p>
+    </div>
+  </section>
+
+  <section>
     <div class="art_gallery_title">
       создай свой<br />
       <span class="lack_line">генеративный арт</span>
@@ -384,7 +426,7 @@
     <div id="save_sketch" class="save_sketch">сохранить арт</div>
   </section>
   <script src="javascript/art_sketch.js"></script>
-  <!-- <script src="javascript/head_sketch.js"></script> -->
+  <script src="javascript/head_sketch.js"></script>
 </body>
 
 </html>

@@ -151,10 +151,24 @@ h3 {
 }
 
 p {
-    margin-left: 465px;
-    max-width: 612px;
     font-size: 24px;
     line-height: 125%;
+}
+
+p.main {
+    margin-left: 465px;
+    max-width: 612px;
+}
+
+p a {
+    cursor: pointer;
+    border-bottom: 3px solid #0000BD;
+    color: inherit;
+    transition: all 0.3s;
+}
+p a:hover {
+    color: #0000BD;
+    /* border-bottom: 3px solid #0000BD; */
 }
 
 .img_wrap {
@@ -435,4 +449,30 @@ section#today {
 }
 .art_item:hover {
     z-index: 100;
+}
+
+/* .gan {
+    border: 3px solid #0000BD;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+.gan {
+    border-left: 3px solid #0000BD;
+    padding-left: 15px;
+    color: #0000BD;
+    margin: 25px 0 40px;
+    width: 660px;
+}
+.gan .title {
+    font-size: 24px;
+}
+.gan .definition {
+    margin-top: 10px;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 130%;
+    width: 550px;
 }
