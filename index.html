@@ -13,8 +13,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/lax.js"></script> -->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
   <script type="module" src="./javascript/main.js"></script>
 </head>
@@ -23,13 +22,13 @@
   <div class="first_screen" id="head_sketch">
     <div class="head_content">
       <div class="menu">
-        <a href="#what_is" class="menu_item">что это</a>
-        <a href="#history_anchor" class="menu_item">история</a>
-        <a href="#" class="menu_item">сейчас</a>
-        <a href="#" class="menu_item">нейросети</a>
-        <a href="#" class="menu_item">как создают</a>
-        <a href="#" class="menu_item">как продавать</a>
-        <a href="#" class="menu_item">будущее</a>
+        <a id="what_is_link" class="menu_item">что это</a>
+        <a id="history_link" class="menu_item">история</a>
+        <a id="today_link" class="menu_item">сейчас</a>
+        <a id="neiro_link" class="menu_item">нейросети</a>
+        <a id="how_to_do_link" class="menu_item">как создают</a>
+        <a id="how_to_sale_link" class="menu_item">как продавать</a>
+        <a id="future_link" class="menu_item">будущее</a>
       </div>
       <h1 class="head_title">Generative art:<br />
         <span class="lack_line italic">искусство или хайп?</span>
@@ -170,13 +169,222 @@
     </div>
   </section>
 
-  <!-- <div class="marquee">
-    <span class="marquee_text italic">Генеративное искусство сегодня</span>
-    <span class="marquee_text lack_line">Генеративное искусство сегодня</span>
-    <span class="marquee_text">Генеративное искусство сегодня</span>
-  </div> -->
 
-  <script src="javascript/head_sketch.js"></script>
+  <section id="today" class="full_width">
+    <div class="marquee">
+      <div class="marquee_line" style="animation-direction: reverse">
+        <span class="lack_line italic"> Генеративное</span> искусство <span class="italic">сегодня</span>
+        <span class="lack_line italic"> Генеративное</span> искусство <span class="italic">сегодня</span>
+      </div>
+      <div class="marquee_line">
+        <span class="italic">сегодня </span><span class="lack_line italic"> Генеративное</span> искусство <span
+          class="italic">сегодня</span>
+        <span class="lack_line italic"> Генеративное</span> искусство
+      </div>
+      <div class="marquee_line" style="animation-direction: reverse">
+        искусство <span class="italic">сегодня</span>
+        <span class="lack_line italic"> Генеративное</span> искусство <span class="italic">сегодня</span>
+        <span class="lack_line italic"> Генеративное </span>
+      </div>
+    </div>
+    <div class="section_content">
+      <div class="grid">
+        <div class="grid-item">...</div>
+        <div class="grid-item">...</div>
+      </div>
+    </div>
+
+    <div class="section_content">
+      <p class="white" style="margin: 0; max-width: 1000px">
+        Генеративный, или по-другому, креативный кодинг, сейчас очень популярен, поэтому мы&nbsp;поговорили с&nbsp;теми,
+        кто
+        напрямую связан с&nbsp;этой индустрией, а&nbsp;именно&nbsp;&mdash; создает ее&nbsp;своими руками, о&nbsp;том,
+        что
+        их&nbsp;привлекает в&nbsp;мире алгоритмического искусства. А&nbsp;еще собрали небольшой сет современных
+        художников
+        и&nbsp;их&nbsp;работ, чтобы не&nbsp;потеряться в&nbsp;многообразии красивых картинок на&nbsp;просторах
+        интернета.
+      </p>
+
+
+
+      <div class="arts_container">
+        <a href="http://mariuswatz.com" class="art_item" target="_blank" style="left: 57px">
+          <img src="assets/images/marius_watz_2.jpeg" style="width: 888px">
+          <div class="art_description">
+            <div class="author">Мариус Ватц</div>
+            <div class="text">Этот норвежский художник является ярым противником стандартных алгоритмов
+              и&nbsp;считает, что непредсказуемость более
+              интересна, нежели ожидаемый исход. Ватц создает программные художественные механизмы, которые генерируют
+              абстракции. Его
+              работы&nbsp;&mdash; результат сбоев и&nbsp;случайностей системы.</div>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/postviolet/" class="art_item" target="_blank"
+          style="top: 317px; left: 730px">
+          <img src="assets/images/veta_postnova.png" style="width: 540px">
+          <div class="art_description">
+            <div class="author">Виолетта Постнова</div>
+            <div class="text">
+              Дизайнер, видеохудожник-лайфкодер, преподаватель Школы дизайна НИУ ВШЭ. Организовывала фестивали Ночь
+              Новых Медиа,
+              в&nbsp;которых делала акцент на&nbsp;их&nbsp;концептуальной и&nbsp;художественной ценности. Постоянно ищет
+              пути
+              применения генеративного кодинга в&nbsp;разных сферах своей деятельности и&nbsp;считает, что креативный
+              кодинг это
+              инструмент для собственных высказываний и&nbsp;экспериментов.
+            </div>
+          </div>
+        </a>
+
+        <div class="quote" style="z-index: 10; top: 614px;">
+          <p class="quote_text">
+            &laquo;Меня в&nbsp;разное время привлекали в&nbsp;креативном кодинге разные вещи: в&nbsp;2009 мне нравилось
+            это
+            потому
+            что это было чем-то новым. Так я&nbsp;познакомилась с&nbsp;крутыми русскими художниками и&nbsp;дизайнерами,
+            которые
+            стали моими друзьями. Мы&nbsp;делали фестивали, даже привозили на&nbsp;него Захари Либермана, создателя
+            openframeworks.
+            <br />
+            <br />
+            Мне нравилось пробовать применить эти технологии к&nbsp;графическому дизайну. Я&nbsp;сделала дипломный
+            проект,
+            генерирующий журналы, делала генератор постеров, смешивала технологии с&nbsp;другими медиумами. Так родилась
+            моя
+            серия
+            плакатов шелкографских. Еще использовала генеративный код в&nbsp;виджей-сетах, которые собирала
+            на&nbsp;unity.
+            Потом
+            узнала про лайфкодинг комьюнити и&nbsp;стала его участницей, теперь выступаю как видеохудожник-лайфкодер.
+            <br />
+            <br />
+            Сейчас, как дизайнера, меня привлекает в&nbsp;криейтив кодинге&nbsp;то, что это простой и&nbsp;дешевый
+            способ
+            отличить
+            свою работу от&nbsp;других, а&nbsp;как художника&nbsp;&mdash; то, что можно сделать кодинг инструментом для
+            собственных
+            высказываний, экспериментов. Еще мне нравится, что криейтив кодинг это точка соприкосновения меня
+            и&nbsp;математики.
+            Какое-то хорошее чувство появляется целостности от&nbsp;этого&raquo;
+          </p>
+          <div class="quote_author">— Виолетта Постнова, дизайнер, видеохудожник-лайфкодер</div>
+        </div>
+
+        <a href="https://zachlieberman.myshopify.com/" class="art_item" target="_blank"
+          style="top: 1096px; left: 705px">
+          <img src="assets/images/lieberman.png" style="width: 569px">
+          <div class="art_description">
+            <div class="author">Зак Либерман</div>
+            <div class="text">
+              Создатель OpenFrameworks. Либерман создает привлекательные визуальные странности с&nbsp;помощью своих
+              различных экспериментов с&nbsp;кодом. &laquo;Я&nbsp;считаю, что проекты никогда не&nbsp;должны быть
+              связаны с&nbsp;технологиями. Технологии всегда должны
+              служить идее. Идея должна быть поэтичной или рассказывать нам о&nbsp;том, что значит быть человеком. Когда
+              я&nbsp;создаю
+              работу, я&nbsp;не&nbsp;хочу, чтобы люди показывали на&nbsp;нее пальцем и&nbsp;говорили: &laquo;Это крутая
+              программа&raquo;. Я&nbsp;хочу, чтобы они сказали: &laquo;Это прекрасная идея&raquo;
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/mattdesl_art" class="art_item" target="_blank"
+          style="top: 1580px; left: 73px; z-index: 10;">
+          <img src="assets/images/watt_delorye.png" style="width: 544px">
+          <div class="art_description">
+            <div class="author">Мэтт ДеЛорье</div>
+            <div class="text">
+              Креативный кодер Matt DesLauriers создает потрясающее алгоритмическое искусство, играющее с&nbsp;балансом
+              света
+              и&nbsp;геометрии. Помимо работы с&nbsp;кодом, он&nbsp;также использует лазерную резку, рисование пером
+              и&nbsp;делает
+              физические отпечатки своих работ.
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.artsy.net/artist/casey-reas" class="art_item" target="_blank"
+          style="top: 2000px; left: 520px">
+          <img src="assets/images/keysy.png" style="width: 742px">
+          <div class="art_description">
+            <div class="author">Кейси Реас</div>
+            <div class="text">
+              Художник, представитель генеративного искусства, является соавтором языка программирования
+              и&nbsp;пространства для
+              создания визуала и&nbsp;анимации Processing. В&nbsp;своих работах исследует идеи трансформации через
+              абстрактные узоры
+              и&nbsp;постоянно меняющиеся структуры.
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.espen.xyz" class="art_item" target="_blank" style="top: 2466px; left: 0px; z-index: 5;">
+          <img src="assets/images/espen_clug.png" style="width: 560px">
+          <div class="art_description">
+            <div class="author">Эспен Клюг</div>
+            <div class="text">
+              Дизайнер и&nbsp;цифровой художник из&nbsp;Норвегии. Одним из&nbsp;основным направлений его
+              профессиональной деятельности
+              является генеративная портретная живопись. Клюг страдает биполярным расстройством, поэтому исследование
+              внутреннего мира
+              занимает главное место во&nbsp;всех его работах. А&nbsp;еще он&nbsp;пишет музыку.
+            </div>
+          </div>
+        </a>
+        <div class="quote" style="z-index: 6; top: 2544px; left: 533px;">
+          <p class="quote_text">
+            &laquo;Мне нравится, что математику можно преобразовать в&nbsp;динамичное изображение. И&nbsp;как дизайнер
+            я&nbsp;всегда
+            видел в&nbsp;математике что-то связанное с&nbsp;искусством. Этой весной мы&nbsp;сколлабились с&nbsp;саунд
+            артистами
+            и&nbsp;выступали в&nbsp;Зиле с&nbsp;лайфкодингом в&nbsp;Hydra под их&nbsp;музыку. Мне кажется, это
+            интересное
+            направление, чтобы попробовать совместить совершенно разные вещи друг с&nbsp;другом&raquo;
+          </p>
+          <div class="quote_author">— Федор Андрюшин, студент Школы Дизайна ВШЭ</div>
+        </div>
+        <a href="https://www.newrafael.com" class="art_item" target="_blank" style="top: 3064px; left: 206px">
+          <img src="assets/images/rafael_rozendal.png" style="width: 1040px">
+          <div class="art_description">
+            <div class="author">Рафаэль Розендаль</div>
+            <div class="text">
+              Концепция творчества&nbsp;&mdash; искусство должно быть не&nbsp;элитарным, а&nbsp;простым
+              и&nbsp;доступным. Цифровая
+              среда дает эту возможность. Каждое произведение художника расположено на&nbsp;своем собственном домене,
+              чтобы создать
+              определенную законченность работы, ведь: &laquo;если картины не&nbsp;представлены отдельно, то&nbsp;они
+              просто
+              становятся серией файлов, на&nbsp;которые никто никогда не&nbsp;посмотрит&raquo;.
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="art_gallery_title">
+      создай свой<br />
+      <span class="lack_line">генеративный арт</span>
+    </div>
+    <div class="art_gallery">
+      <div class="art_gallery_paint">
+        <img src="assets/images/generative_art_1.jpg">
+      </div>
+      <div id="art_sketch">
+        <label for="art_input" id="label">
+          Загрузи свою картинку
+        </label>
+      </div>
+      <div class="art_gallery_paint">
+        <img src="assets/images/generative_art_2.jpg">
+      </div>
+    </div>
+    <div id="save_sketch" class="save_sketch">сохранить арт</div>
+  </section>
+  <script src="javascript/art_sketch.js"></script>
+  <!-- <script src="javascript/head_sketch.js"></script> -->
 </body>
 
 </html>
